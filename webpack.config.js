@@ -30,6 +30,7 @@ const config = {
       '.jsx'
     ]
   },
+  
   module: {
     loaders: [{
         test: /\.jsx?$/,
@@ -37,13 +38,10 @@ const config = {
         loader: "babel-loader",
         exclude: [NODE_MODULES]
       },
-      // {
-      //     test: [
-      //         /\.png$/,
-      //         /\.jpg$/
-      //     ],
-      //     loader: "url-loader"
-      // },
+      {
+          test: /\.(png|jpg|gif)$/,
+          loader: "url-loader"
+      },
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
