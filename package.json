@@ -5,7 +5,6 @@
   "main": "react seed",
   "scripts": {
     "webpack": "webpack",
-    "start": "webpack-dev-server --open --hot",
     "build": "SET NODE_ENV=production && webpack -p"
   },
   "author": "Mehmed Jusic",
@@ -22,7 +21,6 @@
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.9",
-    "webpack-dev-server": "^2.5.0",
     "webpack": "^3.0.0"
   },
   "dependencies": {
